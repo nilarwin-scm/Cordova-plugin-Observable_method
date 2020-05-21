@@ -1,0 +1,19 @@
+{
+    "name": "Observable_method", 
+    "version": "0.0.1", 
+    "description": "Observable method use instead of promise", 
+    "cordova": {
+      "id": "cordova-plugin-Observable_method", 
+      "platforms": [ 
+        "ios" 
+      ]
+    },
+    "keywords": [ 
+      "cordova",
+      "camera",
+      "ecosystem:cordova",
+      "cordova-ios"
+    ],
+    "author": "nilar", 
+    "license": "MIT"
+  }

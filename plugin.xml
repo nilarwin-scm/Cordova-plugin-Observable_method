@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-Observable_method" version="0.0.1"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Observable_method</name>
+
+    <js-module name="Observable_method" src="www/Observable_method.js">
+        <clobbers target="Observable_method" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+
+            <feature name="Observable_method">
+                <param name="ios-package" value="Observable_method" />
+            </feature>
+
+        </config-file>
+
+        <!-- Add in the plugin .swift files here -->
+        <source-file src="src/ios/Observable_method.swift" />
+
+        <!-- Add in the swift-support plugin by default -->
+        <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
+    </platform>
+</plugin>
