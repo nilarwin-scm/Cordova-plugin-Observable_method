@@ -11,5 +11,15 @@
     }
     self.commandDelegate!.send(pluginResult, callbackId: command.callbackId);
   }
+  @objc(carrycolor:)
+  func carrycolor(command: CDVInvokedUrlCommand) {
+     print("carrycolor1")
+    var returndata = ""
+    var color = command.argument(at: 0) as! String
+    returndata = color
+    let pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: returndata);
+    self.commandDelegate!.send(pluginResult, callbackId: command.callbackId);
+    print("carrycolor2")
+  }
 }
 
